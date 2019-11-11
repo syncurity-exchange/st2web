@@ -4528,14 +4528,14 @@ follow-redirects@^1.3.0:
   dependencies:
     debug "^3.2.6"
 
-fontello-update@0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/fontello-update/-/fontello-update-0.6.3.tgz#f75b088460ad3a41901f84cc559391e4f3cc5130"
-  integrity sha1-91sIhGCtOkGQH4TMVZOR5PPMUTA=
+fontello-update@0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/fontello-update/-/fontello-update-0.6.5.tgz#d0d1e24a3d1f4642a9c249e66e75f39b6964115c"
+  integrity sha512-expEL/PG4HL4IDprlRKFt+bN3oHT5npd1SAlznOxVCs/OygVvuM8zJ+FjKUERUwQMtkWN3GsXDCqCm3iqAXWrA==
   dependencies:
     adm-zip "^0.4.7"
     form-data "^1.0.0-rc3"
-    open "0.0.5"
+    open ">=6.0.0"
     q "^1.1.2"
     request "^2.60.0"
     temp "^0.8.3"
@@ -6011,6 +6011,11 @@ is-windows@^1.0.1, is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   integrity sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==
+
+is-wsl@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-2.1.1.tgz#4a1c152d429df3d441669498e2486d3596ebaf1d"
+  integrity sha512-umZHcSrwlDHo2TGMXv0DZ8dIUGunZ2Iv68YZnrmCiBPkZ4aaOhtv7pXJKeki9k3qJ3RJr0cDyitcl5wEH3AYog==
 
 is@^3.2.1:
   version "3.3.0"
@@ -7738,7 +7743,14 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-open@0.0.5, open@^0.0.5:
+open@>=6.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/open/-/open-7.0.0.tgz#7e52999b14eb73f90f0f0807fe93897c4ae73ec9"
+  integrity sha512-K6EKzYqnwQzk+/dzJAQSBORub3xlBTxMz+ntpZpH/LyCa1o6KjXhuN+2npAaI9jaSmU3R1Q8NWf4KUWcyytGsQ==
+  dependencies:
+    is-wsl "^2.1.0"
+
+open@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/open/-/open-0.0.5.tgz#42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc"
   integrity sha1-QsPhjslUZra/DcQvOilFw/DK2Pw=
